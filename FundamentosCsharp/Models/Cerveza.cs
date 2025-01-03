@@ -16,7 +16,7 @@ namespace FundamentosCsharp.Models
             Console.WriteLine("El máximo recomendado son 3 pintas");
         }
 
-        public Cerveza( int Cantidad, string Nombre = "Cerveza Stout Imperial") 
+        public Cerveza( int Cantidad, string Nombre = "Stout Imperial") 
             : base(Nombre , Cantidad)
         {
        
