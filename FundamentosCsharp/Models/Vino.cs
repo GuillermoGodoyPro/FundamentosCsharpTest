@@ -15,7 +15,7 @@ namespace FundamentosCsharp.Models
             Console.WriteLine("El máximo recomendado son 4 copas");
         }
 
-        public Vino(int Cantidad, string Nombre = "Malbec")
+        public Vino(int Cantidad, string Nombre = "Vino")
             : base(Nombre, Cantidad)
         {
 

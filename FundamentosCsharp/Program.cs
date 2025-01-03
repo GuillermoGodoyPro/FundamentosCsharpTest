@@ -6,18 +6,16 @@ internal class Program
 
     private static void Main(string[] args)
     {
-        var bebidaRoja = new Vino(100);
-        var bebidaNegra = new Cerveza(100);
-        MostraReco(bebidaRoja, bebidaRoja.Nombre);
-        MostraReco(bebidaNegra, bebidaNegra.Nombre );
-        
+        CervezaBD cervezaBd = new CervezaBD();
+        var cervezas = cervezaBd.Get();
+
+        foreach( var cerveza in cervezas )
+        {
+            Console.WriteLine(cerveza.Nombre);  
+        }
+
 
     }
 
-    static void MostraReco(IbebidaAlcoholica bebida, string? nombre)
-    {
-        Console.WriteLine(nombre); 
-        bebida.MaxRecomendado();
-    }
-
+   
 }
