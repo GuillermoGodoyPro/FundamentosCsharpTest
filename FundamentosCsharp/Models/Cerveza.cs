@@ -13,7 +13,7 @@ namespace FundamentosCsharp.Models
 
         public void MaxRecomendado()
         {
-            Console.WriteLine("El máximo recomendado son 3 pintas");
+            Console.WriteLine("El máximo recomendado son 4 pintas");
         }
 
         public Cerveza( int Cantidad, string Nombre = "Stout Imperial") 
